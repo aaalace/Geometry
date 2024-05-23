@@ -1,0 +1,5 @@
+# ninja log v5
+7	324	7381179747836012	CMakeFiles/contest5_geometry.dir/src/vector.cpp.obj	d8729ea4cf2366b4
+15	330	7381179747894626	CMakeFiles/contest5_geometry.dir/src/point.cpp.obj	8d33cb7e070be689
+0	442	7381179906543705	CMakeFiles/contest5_geometry.dir/main.cpp.obj	9b2df8ff8f37aa05
+444	741	7381179909486006	contest5_geometry.exe	1036fb40bddc85e9
