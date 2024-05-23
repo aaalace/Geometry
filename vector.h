@@ -28,6 +28,9 @@ class Vector {
 
   bool operator==(Vector&);
   bool operator!=(Vector&);
+
+  int64_t DotProduct(Vector&) const;
+  int64_t CrossProduct(Vector&) const;
 };
 
 }

@@ -77,5 +77,13 @@ bool Vector::operator!=(Vector& other) {
   return this->x != other.x || this->y != other.y;
 }
 
+// products
+int64_t Vector::DotProduct(Vector& v2) const {
+  return this->x * v2.x + this->y * v2.y;
 }
 
+int64_t Vector::CrossProduct(Vector& v2) const {
+  return this->x * v2.y - v2.x * this->y;
+}
+
+}

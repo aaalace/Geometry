@@ -1,9 +1,13 @@
 #ifndef CONTEST5_GEOMETRY_POINT_H_
 #define CONTEST5_GEOMETRY_POINT_H_
 
-#include <cstdint>
-#include "vector.h"
 #include "ishape.h"
+#include "vector.h"
+#include <cstdint>
+#include <string>
+#include <sstream>
+using std::string;
+using std::stringstream;
 
 namespace geometry {
 
@@ -16,12 +20,12 @@ class Point : public IShape {
   int64_t y;
 
   Point* Move(const Vector& vector) override;
-  bool ContainsPoint(const Point&) override;
-  bool CrossesSegment(const Segment&) override;
-  IShape* Clone() override;
-  void ToString() override;
+  bool ContainsPoint(const Point&) const override;
+  bool CrossesSegment(const Segment&) const override;
+  Point* Clone() const override;
+  string ToString() const override;
 
-  Vector operator-(Point& p2);
+  Vector operator-(const Point& p2) const;
 };
 
 }
